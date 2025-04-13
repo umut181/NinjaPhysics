@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ninja Physics</title>
+        <link rel="stylesheet" href="game.css">
+
+        <script src="game.js" defer></script>
+
+
+    </head>
+    
+    <body>
+        <canvas id="game"></canvas>
+
+        
+        <div id="info-left">
+            <h3>Player 1</h3>
+            <label for="angle-left">Angle:</label>
+            <input type="range" id="angle-left" min="0" max="90" value="45" oninput="updateAngle('left', this.value)">
+            <span id="angleValue-left">45</span>°
+        
+            <label for="velocity-left">Velocity:</label>
+            <input type="range" id="velocity-left" min="0" max="200" value="100" oninput="updateVelocity('left', this.value)">
+            <span id="velocityValue-left">100</span>
+
+            <button onclick="fire('left')">THROW</button>
+
+        </div>
+        
+        <div id="info-right">
+            <h3>Player 2</h3>
+            <label for="angle-right">Angle:</label>
+            <input type="range" id="angle-right" min="0" max="90" value="45" oninput="updateAngle('right', this.value)">
+            <span id="angleValue-right">45</span>°
+        
+            <label for="velocity-right">Velocity:</label>
+            <input type="range" id="velocity-right" min="0" max="200" value="100" oninput="updateVelocity('right', this.value)">
+            <span id="velocityValue-right">100</span>
+
+            <button onclick="fire('right')">THROW</button>
+
+        </div>
+
+        <div id="congratulations">
+            <h1 style="color:orangered" ><span id="winner">?</span> won!</h1>
+            <button id="new-game"> New Game? </button> 
+        </div>
+
+        <div id = "menu"> 
+            <button  id = "menu-button" onclick="window.location.href='index.html'" >MAIN MENU</button>
+        </div>
+
+
+    
+    </body>
+</html>

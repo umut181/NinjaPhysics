@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+#info-left {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+#info-right {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    text-align: right;
+}
+
+#menu{
+    position: absolute;
+    top: 1vh;
+    right: 50%;
+    transform: translateX(50%); /* Centers it */
+    text-align: center;
+}
+
+button {
+    background-color: rgb(237, 171, 4); 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#congratulations {
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu-button {
+
+    background-color:rgb(237, 246, 241); 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+#menu-button:hover{
+    background-color: green;
+}
+
+#new-game {
+
+    background-color: orangered; 
+    border: none;
+    color: white;
+    padding: 16px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+
+}
+
+#new-game:hover {
+    background-color: green
+}
+
